@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sources":["../src/main.ts"],"sourcesContent":["document.addEventListener(\"DOMContentLoaded\", () => {\n  console.log(\"hi\");\n});\n"],"names":[],"mappings":"AAAA,SAAS,iBAAiB,mBAAoB,IAAM,CAClD,QAAQ,IAAI,IAAI,CAClB,CAAC"}
