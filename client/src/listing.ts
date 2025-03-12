@@ -139,6 +139,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     listingTitle.innerText = `${listing.bedrooms} BED, ${listing.bathrooms} BATH`;
     listingPrice.innerText = `$${Number(listing.price).toLocaleString()}`;
+    listingContactUs.href = `#`;
+    listingFloorPlan.href = `#`;
     listingDescription.textContent = listing.description;
 
     toggleHideElement({ element: listingLoader, toggle: "hide" });
