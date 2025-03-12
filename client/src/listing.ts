@@ -1,5 +1,5 @@
 import type { Listing } from "../../types/Listing";
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://hudson-properties-dev.vercel.app";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const listingSlugId = new URLSearchParams(window.location.search).get("id");
