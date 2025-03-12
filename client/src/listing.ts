@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector<HTMLDivElement>(`[dev-target=title]`);
   const listingPrice =
     document.querySelector<HTMLDivElement>(`[dev-target=price]`);
-  const listingContactUs = document.querySelector<HTMLLinkElement>(
-    `[dev-target=contact-us]`
-  );
+  //   const listingContactUs = document.querySelector<HTMLLinkElement>(
+  //     `[dev-target=contact-us]`
+  //   );
   const listingFloorPlan = document.querySelector<HTMLLinkElement>(
     `[dev-target=floor-plan]`
   );
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     !imageItemTabletTemplate ||
     !listingTitle ||
     !listingPrice ||
-    !listingContactUs ||
+    // !listingContactUs ||
     !listingFloorPlan ||
     !listingDescription
   ) {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       listing,
       listingLoader,
       listingWrapper,
-      listingContactUs,
+      //   listingContactUs,
       listingDescription,
       listingFloorPlan,
       listingPrice,
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     imageItemTabletTemplate,
     listingTitle,
     listingPrice,
-    listingContactUs,
+    // listingContactUs,
     listingFloorPlan,
     listingDescription,
   }: {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     imageItemTabletTemplate: HTMLElement;
     listingTitle: HTMLElement;
     listingPrice: HTMLElement;
-    listingContactUs: HTMLLinkElement;
+    // listingContactUs: HTMLLinkElement;
     listingFloorPlan: HTMLLinkElement;
     listingDescription: HTMLElement;
   }) {
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     listingTitle.innerText = `${listing.bedrooms} BED, ${listing.bathrooms} BATH`;
     listingPrice.innerText = `$${Number(listing.price).toLocaleString()}`;
-    listingContactUs.href = `#`;
+    // listingContactUs.href = `#`;
     listingFloorPlan.href = `#`;
     listingDescription.textContent = listing.description;
 
